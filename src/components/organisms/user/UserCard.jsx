@@ -13,7 +13,7 @@ export const UserCard = (props) => {
         <dt>TEL</dt>
         <dd>{user.phone}</dd>
         <dt>会社名</dt>
-        <dd>{user.company.name}</dd>
+        <dd>{UserCard.company}</dd>
         <dt>WEB</dt>
         <dd>{user.website}</dd>
       </SDl>
@@ -30,5 +30,6 @@ const SDl = styled.dl`
   dd {
     padding-left: 32px;
     padding-bottom: 8px;
+    overflow-wrap: break-word;
   }
 `;
