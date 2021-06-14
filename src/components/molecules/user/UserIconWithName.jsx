@@ -2,6 +2,8 @@ import { memo } from "react";
 // import { memo, useContext } from "react";
 
 import styled from "styled-components";
+//このファイルでは、userInfoは値を参照するためだけに使用しているので、
+//useRecoilValueを使用：値を参照するためだけに使用
 import { useRecoilValue } from "recoil";
 // import { UserContext } from "../../../providers/UserProvider";
 import { userState } from "../../../store/userState";
